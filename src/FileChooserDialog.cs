@@ -17,6 +17,9 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 
+// This file doesn't actually do anything. The original file was lost during a distro change.
+// I have no plans to rework this class as this project is reach its EOL.
+
 namespace yawg
 {
 	public partial class FileChooserDialog : Gtk.Dialog

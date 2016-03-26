@@ -1,16 +1,26 @@
-yawg
-====
+# Yet Another Wine Gui
 
-Yet Another Wine GUI (Yawg) is a simple prototype GUI-based application. It's original purpose was to allow access to Wine functions and applications without having to use the CLI.
+Yet Another Wine GUI (Yawg) is a simple prototype GTK# application. It's purpose was to allow access to Wine functions and applications without having to use the CLI.
 
-Yawg is written in Mono and GTK 2.x using Stetic, a Windows Forms-like GUI builder built into MonoDevelop.
+Yawg is written in Mono and GTK **2** using Stetic, a Windows Forms-like GUI builder built into MonoDevelop.
 
+## Uses
 The project was a prototype as much as it was a learning exercise for me to familiarize myself with Mono tools on Linux but also GUI development and GUI builders. As such, this project has reach its end of life and will not be updated.
 
-Takeaways from this project:
+## Compatibility
 
-* I loathe GUI builders
-* I don't particularly like using Mono/C# for personal projects
-* MonoDevelop is possibly the best/most powerful IDE for Linux, however it's Git integration is terrible
+Yawg simply uses the built-in Wine applications and calls them through Mono processes. Unless Wine breaks compatibility with itself, the code in WineFunctions.cs will probably always be valid.
 
-The original purpose of Yawg will likely be rewritten into a new application that doesn't use a GUI builder.
+Yawg uses GTK Sharp 2.x (not 3.x) but there shouldn't be any compatibility concerns there.
+
+## Dependencies
+
+The following dlls are used to build this project:
+
+* atk-sharp
+* gdk-sharp
+* glade-sharp
+* glib-sharp
+* gtk-sharp
+* Mono.Posix
+* pango-sharp

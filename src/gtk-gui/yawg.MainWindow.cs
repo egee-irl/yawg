@@ -5,22 +5,39 @@ namespace yawg
 	public partial class MainWindow
 	{
 		private global::Gtk.UIManager UIManager;
+		
 		private global::Gtk.Action FileAction;
+		
 		private global::Gtk.Action QuitAction;
+		
 		private global::Gtk.Action HelpAction;
+		
 		private global::Gtk.Action AboutAction;
+		
 		private global::Gtk.Action ToolsAction;
+		
 		private global::Gtk.Action WineConfigureAction;
+		
 		private global::Gtk.Action ConsoleAction;
+		
 		private global::Gtk.Action FileExplorerAction;
+		
 		private global::Gtk.Action WinetricksAction;
+		
 		private global::Gtk.Action ControlPanelAction;
+		
 		private global::Gtk.Action InternetExplorerAction;
+		
 		private global::Gtk.Action RefreshAction;
+		
 		private global::Gtk.Action OpenFolderAction;
+		
 		private global::Gtk.VBox vbox1;
+		
 		private global::Gtk.MenuBar menubar1;
+		
 		private global::Gtk.ScrolledWindow scrolledwindow1;
+		
 		private global::Gtk.TextView textview1;
 
 		protected virtual void Build ()

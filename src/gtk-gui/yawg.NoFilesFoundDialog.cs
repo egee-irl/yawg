@@ -4,8 +4,8 @@ namespace yawg
 {
 	public partial class NoFilesFoundDialog
 	{
-		private global::Gtk.ScrolledWindow GtkScrolledWindow;
-		private global::Gtk.TextView textview1;
+		private global::Gtk.Button buttonCancel;
+		
 		private global::Gtk.Button buttonOk;
 
 		protected virtual void Build ()
@@ -13,33 +13,30 @@ namespace yawg
 			global::Stetic.Gui.Initialize (this);
 			// Widget yawg.NoFilesFoundDialog
 			this.Name = "yawg.NoFilesFoundDialog";
+			this.Title = global::Mono.Unix.Catalog.GetString ("dialog1");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Internal child yawg.NoFilesFoundDialog.VBox
 			global::Gtk.VBox w1 = this.VBox;
 			w1.Name = "dialog1_VBox";
 			w1.BorderWidth = ((uint)(2));
-			// Container child dialog1_VBox.Gtk.Box+BoxChild
-			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
-			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
-			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
-			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-			this.textview1 = new global::Gtk.TextView ();
-			this.textview1.Buffer.Text = "No Windows executable files found at the location provided.";
-			this.textview1.CanFocus = true;
-			this.textview1.Name = "textview1";
-			this.textview1.Editable = false;
-			this.textview1.AcceptsTab = false;
-			this.textview1.WrapMode = ((global::Gtk.WrapMode)(2));
-			this.GtkScrolledWindow.Add (this.textview1);
-			w1.Add (this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(w1 [this.GtkScrolledWindow]));
-			w3.Position = 0;
 			// Internal child yawg.NoFilesFoundDialog.ActionArea
-			global::Gtk.HButtonBox w4 = this.ActionArea;
-			w4.Name = "dialog1_ActionArea";
-			w4.Spacing = 10;
-			w4.BorderWidth = ((uint)(5));
-			w4.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			global::Gtk.HButtonBox w2 = this.ActionArea;
+			w2.Name = "dialog1_ActionArea";
+			w2.Spacing = 10;
+			w2.BorderWidth = ((uint)(5));
+			w2.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
+			this.buttonCancel = new global::Gtk.Button ();
+			this.buttonCancel.CanDefault = true;
+			this.buttonCancel.CanFocus = true;
+			this.buttonCancel.Name = "buttonCancel";
+			this.buttonCancel.UseStock = true;
+			this.buttonCancel.UseUnderline = true;
+			this.buttonCancel.Label = "gtk-cancel";
+			this.AddActionWidget (this.buttonCancel, -6);
+			global::Gtk.ButtonBox.ButtonBoxChild w3 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w2 [this.buttonCancel]));
+			w3.Expand = false;
+			w3.Fill = false;
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonOk = new global::Gtk.Button ();
 			this.buttonOk.CanDefault = true;
@@ -49,16 +46,16 @@ namespace yawg
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = "gtk-ok";
 			this.AddActionWidget (this.buttonOk, -5);
-			global::Gtk.ButtonBox.ButtonBoxChild w5 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w4 [this.buttonOk]));
-			w5.Expand = false;
-			w5.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w4 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w2 [this.buttonOk]));
+			w4.Position = 1;
+			w4.Expand = false;
+			w4.Fill = false;
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 441;
-			this.DefaultHeight = 136;
+			this.DefaultWidth = 400;
+			this.DefaultHeight = 300;
 			this.Show ();
-			this.buttonOk.Clicked += new global::System.EventHandler (this.OnButtonOkClicked);
 		}
 	}
 }

@@ -71,9 +71,10 @@
     <Compile Include="WineFunctions.cs" />
     <Compile Include="gtk-gui\yawg.MainWindow.cs" />
     <Compile Include="UtilityFunctions.cs" />
+    <Compile Include="FileChooserDialog.cs" />
+    <Compile Include="gtk-gui\yawg.FileChooserDialog.cs" />
     <Compile Include="NoFilesFoundDialog.cs" />
     <Compile Include="gtk-gui\yawg.NoFilesFoundDialog.cs" />
-    <Compile Include="FileChooserDialog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -150,9 +150,8 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Dialog" id="yawg.NoFilesFoundDialog" design-size="615 519">
+  <widget class="Gtk.Dialog" id="yawg.FileChooserDialog" design-size="400 300">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">window1</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Buttons">2</property>
     <property name="HelpButton">False</property>
@@ -161,23 +160,7 @@
         <property name="MemberName" />
         <property name="BorderWidth">2</property>
         <child>
-          <widget class="Gtk.VBox" id="vbox2">
-            <property name="MemberName" />
-            <property name="Spacing">6</property>
-            <child>
-              <widget class="Gtk.FileChooserWidget" id="filechooserwidget1">
-                <property name="MemberName" />
-              </widget>
-              <packing>
-                <property name="Position">0</property>
-                <property name="AutoSize">True</property>
-              </packing>
-            </child>
-          </widget>
-          <packing>
-            <property name="Position">0</property>
-            <property name="AutoSize">True</property>
-          </packing>
+          <placeholder />
         </child>
       </widget>
     </child>
@@ -197,7 +180,6 @@
             <property name="Type">StockItem</property>
             <property name="StockId">gtk-cancel</property>
             <property name="ResponseId">-6</property>
-            <signal name="Clicked" handler="OnButtonCancelClicked" />
             <property name="label">gtk-cancel</property>
           </widget>
           <packing>
@@ -214,7 +196,6 @@
             <property name="Type">StockItem</property>
             <property name="StockId">gtk-ok</property>
             <property name="ResponseId">-5</property>
-            <signal name="Clicked" handler="OnButtonOkClicked" />
             <property name="label">gtk-ok</property>
           </widget>
           <packing>
@@ -285,8 +266,9 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Dialog" id="yawg.FileChooserDialog" design-size="400 300">
+  <widget class="Gtk.Dialog" id="yawg.NoFilesFoundDialog" design-size="400 300">
     <property name="MemberName" />
+    <property name="Title" translatable="yes">dialog1</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Buttons">2</property>
     <property name="HelpButton">False</property>
